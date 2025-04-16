@@ -34,6 +34,20 @@ const BarraLateral = () => {
                     >
                         Mais curtidas
                     </ItemNavegacao>
+                    <ItemNavegacao 
+                        itemAtivo='/icons/novas-ativo.png'
+                        itemInativo='/icons/novas-inativo.png'
+                        ativo={false}
+                    >
+                        Novas
+                    </ItemNavegacao>
+                    <ItemNavegacao 
+                        itemAtivo='/icons/surpreenda-me-ativo.png'
+                        itemInativo='/icons/surpreenda-me-inativo.png'
+                        ativo={false}
+                    >
+                        Surpreenda-me
+                    </ItemNavegacao>
                 </BarraEstilizada>
             </nav>
         </aside>
