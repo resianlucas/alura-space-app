@@ -33,7 +33,7 @@ const CampoTexto = (props) => {
     return (
         <ContainerEstilizado>
             <CampoTextoEstilizado placeholder="O que você procura?" {...props} />
-            <IconeLupa src="/icones/search.png" alt="ícone de lupa" />
+            <IconeLupa src="/icons/search.png" alt="ícone de lupa" />
         </ContainerEstilizado>
     )
 }
