@@ -57,11 +57,14 @@ function App() {
             <Banner
               backgroundImage={imagemBanner}
               titulo='A galeria mais completa de fotos do espaço!' />
-            <Galeria fotos={fotosDaGaleria} />
+            <Galeria aoFotoSelecionada={foto => setFotoSelecionada(foto)} fotos={fotosDaGaleria} />
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
-      <ModalZoom foto={fotoSelecionada}/>
+      <ModalZoom
+        foto={fotoSelecionada}
+        aoFechar={() => setFotoSelecionada(null)}
+      />
     </FundoGradiente>
   )
 }
