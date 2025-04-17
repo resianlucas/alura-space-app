@@ -33,7 +33,7 @@ const Populares = () => {
         <section>
             <Titulo $alinhamento="center">Populares</Titulo>
             <ColunaFotos>
-                {fotos.map(foto => <Imagem src={foto.path} alt={foto.alt} id={foto.id}/>)}
+                {fotos.map(foto => <Imagem src={foto.path} alt={foto.alt} key={foto.id}/>)}
             </ColunaFotos>
             <Botao>Ver Mais</Botao>
 
